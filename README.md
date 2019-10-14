@@ -1,5 +1,5 @@
 # PokemonAPI
-PokemonAPI for managing Pokemon. Performs a set of operations on an imported Pokemon file
+PokemonAPI for managing Pokemon. Performs a set of operations on an imported Pokemon file.
 Allows you to POST, PUT, GET & DELETE a Pokemon by name.
 
 ## Requirements
@@ -23,7 +23,7 @@ Navigate to local host with Pokemon name in order to see details of all Pokemon 
 ```
 http://127.0.0.1:5000/pokemon
 ```
-
+### Get Pokemon
 
 Navigate to recipe-by-cuisine with a specified cuisine.
 Specify page number if desired
