@@ -3,7 +3,7 @@ import json
 import os
 
 
-def import_csv_as_json() -> dict:
+def import_csv_as_json() -> list:
     """
     imports pokemon from csv file
     :return: pokemon data in dict/json format
@@ -11,12 +11,11 @@ def import_csv_as_json() -> dict:
     csv_file = open(os.path.realpath('pokemon.csv'), 'r')
     fieldnames = ("id", "name", "type1", "type2", "total", "HP", "attack", "defense", "sp_atk",
                   "sp_def", "speed", "gen", "legend")
-    pokemon_import = {}
     reader = csv.DictReader(csv_file, fieldnames)
+    pokemon_import = []
     next(reader)  # skip first row of headers
     for row in reader:
-        name = row['name']
-        pokemon_import[name] = row
+        pokemon_import.append(row)
     return pokemon_import
 
 
@@ -43,6 +42,6 @@ def import_json() -> dict:
 
 
 if __name__ == "__main__":
-    pokemon = import_csv_as_json()
-    export_json(pokemon)
-    pokemon = import_json()
+    pokemons = import_csv_as_json()
+    export_json(pokemons)
+    pokemons = import_json()
