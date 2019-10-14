@@ -1,8 +1,6 @@
 # PokemonAPI
-PokemonAPI for managing Pokemon
-
-Performs a set of recipe operations on an imported recipe file
-Allows you to get recipes by ID, get recipes by cuisine, and update existing recipes
+PokemonAPI for managing Pokemon. Performs a set of operations on an imported Pokemon file
+Allows you to POST, PUT, GET & DELETE a Pokemon by name.
 
 ## Requirements
 
@@ -21,9 +19,9 @@ Running the web app.
 set FLASK_APP=run.py
 flask run
 ```
-Navigate to local host with recipe ID in order to see details of that recipe
+Navigate to local host with Pokemon name in order to see details of all Pokemon in application.
 ```
-http://127.0.0.1:5000/<id>
+http://127.0.0.1:5000/pokemon
 ```
 
 
