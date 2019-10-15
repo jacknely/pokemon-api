@@ -45,10 +45,10 @@ http://127.0.0.1:5000/pokemon/<name>
 ```
 ```
 {	
-	"HP": "str",
-	"attack": "str",
-	"defense": "str",
-	"gen": "str",
+  "HP": "str",
+  "attack": "str",
+  "defense": "str",
+  "gen": "str",
   "legend": "str",
   "sp_atk": "str",
   "sp_def": "str",
@@ -59,7 +59,7 @@ http://127.0.0.1:5000/pokemon/<name>
   "id": "int"
 }
 ```
-### Update Specific Pokemon
+### Delete Specific Pokemon
   
 Delete existing Pokemon using a DELETE request with the corresponding <name> in address.
 
