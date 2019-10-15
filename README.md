@@ -36,6 +36,31 @@ GET Pokemon by replacing <name> in following address:
 ```
 http://127.0.0.1:5000/pokemon/<name>
 ```
+  
+### Add New Pokemon
+  
+Add a Pokemon using a POST request with the data to be added for the new <name> in json format in body.
+
+```
+http://127.0.0.1:5000/pokemon/<name>
+```
+```
+{	
+  "HP": "str",
+  "attack": "str",
+  "defense": "str",
+  "gen": "str",
+  "legend": "str",
+  "sp_atk": "str",
+  "sp_def": "str",
+  "speed": "str",
+  "total": "str",
+  "type1": "str",
+  "type2": "str",
+  "id": "int"
+}
+```
+
 ### Update Specific Pokemon
   
 Update existing Pokemon using a PUT or POST request with the data to be updated for the corresponding <name> in json format in body.
