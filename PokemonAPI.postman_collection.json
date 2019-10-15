@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "b242ec17-16e4-416c-aea1-3e96765070de",
+		"name": "PokemonAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/pokemon",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pokemon"
+					]
+				},
+				"description": "gets all pokemon"
+			},
+			"response": []
+		},
+		{
+			"name": "/pokemon/<name>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/pokemon/<name>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pokemon",
+						"<name>"
+					]
+				},
+				"description": "This will return one specific Pokemon"
+			},
+			"response": []
+		},
+		{
+			"name": "/pokemon/<name>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/pokemon/<name>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pokemon",
+						"<name>"
+					]
+				},
+				"description": "This will delete one specific Pokemon"
+			},
+			"response": []
+		},
+		{
+			"name": "/pokemon/<name>",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\t\"HP\": \"TTT\",\r\n\t\"attack\": \"TTT\",\r\n\t\"defense\": \"TTT\",\r\n\t\"gen\": \"TTT\",\r\n    \"legend\": \"False\",\r\n    \"sp_atk\": \"TTT\",\r\n    \"sp_def\": \"TTT\",\r\n    \"speed\": \"TTT\",\r\n    \"total\": \"TTT\",\r\n    \"type1\": \"TTT\",\r\n    \"type2\": \"TTT\",\r\n    \"id\": \"444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pokemon/test",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pokemon",
+						"test"
+					]
+				},
+				"description": "This will create a new pokemon\n"
+			},
+			"response": []
+		},
+		{
+			"name": "/pokemon/<name>",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\t\"HP\": \"TTT\",\r\n\t\"attack\": \"TTT\",\r\n\t\"defense\": \"TTT\",\r\n\t\"gen\": \"TTT\",\r\n    \"legend\": \"False\",\r\n    \"sp_atk\": \"TTT\",\r\n    \"sp_def\": \"TTT\",\r\n    \"speed\": \"TTT\",\r\n    \"total\": \"TTT\",\r\n    \"type1\": \"TTT\",\r\n    \"type2\": \"TTT\",\r\n    \"id\": \"555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pokemon/test",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pokemon",
+						"test"
+					]
+				},
+				"description": "This will edit an existing pokemon or, if pokemon does not exist, it will create a new pokemon\n"
+			},
+			"response": []
+		}
+	]
+}
