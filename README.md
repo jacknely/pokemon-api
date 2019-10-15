@@ -23,20 +23,48 @@ Navigate to local host with Pokemon name in order to see details of all Pokemon 
 ```
 http://127.0.0.1:5000/pokemon
 ```
-### Get Pokemon
+### Get All Pokemon
 
-Navigate to recipe-by-cuisine with a specified cuisine.
-Specify page number if desired
+Navigate to the below address.
+
 ```
-http://127.0.0.1:5000/cuisine/british/?page=1&items=1
+http://127.0.0.1:5000/pokemon
 ```
+### Get Specific Pokemon
 
-
-Update existing recipes using a PUT request with the data to be updated for the corresponding ID.
+GET Pokemon by replacing <name> in following address:
 ```
-eg
-data = {"title": "changed"}
-http://127.0.0.1:5000/<id>
+http://127.0.0.1:5000/pokemon/<name>
 ```
+### Update Specific Pokemon
+  
+Update existing Pokemon using a PUT or POST request with the data to be updated for the corresponding <name> in json format in body.
 
+```
+http://127.0.0.1:5000/pokemon/<name>
+```
+```
+{	
+	"HP": "str",
+	"attack": "str",
+	"defense": "str",
+	"gen": "str",
+  "legend": "str",
+  "sp_atk": "str",
+  "sp_def": "str",
+  "speed": "str",
+  "total": "str",
+  "type1": "str",
+  "type2": "str",
+  "id": "int"
+}
+```
+### Update Specific Pokemon
+  
+Delete existing Pokemon using a DELETE request with the corresponding <name> in address.
 
+```
+http://127.0.0.1:5000/pokemon/<name>
+```
+  
+  
