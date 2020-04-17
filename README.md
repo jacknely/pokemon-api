@@ -1,3 +1,9 @@
+![Python application](https://github.com/jacknely/PokemonAPI/workflows/Python%20application/badge.svg)
+![Python package](https://github.com/jacknely/PokemonAPI/workflows/Python%20package/badge.svg)
+![Docker Image CI](https://github.com/jacknely/PokemonAPI/workflows/Docker%20Image%20CI/badge.svg)
+
+
+
 # PokemonAPI
 PokemonAPI for managing Pokemon. Performs a set of operations on an imported Pokemon file.
 Allows you to POST, PUT, GET & DELETE a Pokemon by name.
