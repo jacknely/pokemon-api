@@ -2,10 +2,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 import pytest
-from app import Pokemon, PokemonList, api, app
+from app import app
 from file import File
-from flask import Flask
-from flask_restful import Api
 
 
 @pytest.fixture(scope="session")
